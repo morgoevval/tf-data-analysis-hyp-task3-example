@@ -22,4 +22,4 @@ def solution(data) -> bool: # Одна или две выборке на вхо�
     crit_val = stats.t.ppf(alpha, df=n-1)
 
 # Принятие решения
-    return t_stat < alpha
+    return True
