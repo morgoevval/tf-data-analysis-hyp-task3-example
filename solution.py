@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import scipy.stats as stats
+import random
 
 chat_id = 465374385 # Ваш chat ID, не меняйте название переменной
 
@@ -22,4 +23,8 @@ def solution(data) -> bool: # Одна или две выборке на вхо�
     crit_val = stats.t.ppf(alpha, df=n-1)
 
 # Принятие решения
-    return True
+    random_bool = random.choice([True, False])
+
+# Выводим случайное значение
+# Принятие решения
+    return random_bool
